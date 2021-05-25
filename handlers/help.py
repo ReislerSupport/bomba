@@ -10,28 +10,28 @@ from pyrogram.types import Message
 )
 async def help_(client: Client, message: Message):
     await message.reply_text(
-        f"""❤ Komutlar ve orada kullanımı burada açıklanmıştır ❤
-**Gruptaki herkes için**
-- `/oynat <şarkı adı>` - istediğin şarkıyı çal
-- `/doynat <şarkı adı>` -deezer ile istediğin şarkıyı çal
-- `/soynat <şarkı adı>` - jio saavn ile istediğin şarkıyı çal
-- `/oynatmalistesi` - Şimdi çalma listesini göster
-- `/current` - Şimdi çalan göster
-- `/song <şarkı adı>` - hızlıca istediğiniz şarkıları indirin
-- `/arama <query>` - ayrıntılarla youtube'da video arayın
-- `/deezer <şarkı adı>` - deezer ile istediğiniz şarkıları hızlıca indirin
-- `/saavn <şarkı adı>` - saavn ile istediğiniz şarkıları hızlıca indirin
-- `/video <şarkı adı>` - istediğiniz videoları hızlı bir şekilde indirin
+        f"""❤ The commands and there use is explained here ❤
+**For all in group**
+- `/play <song name>` - play song you requested
+- `/dplay <song name>` - play song you requested via deezer
+- `/splay <song name>` - play song you requested via jio saavn
+- `/playlist` - Show now playing list
+- `/current` - Show now playing
+- `/song <song name>` - download songs you want quickly
+- `/arama <query>` - search videos on youtube with details
+- `/deezer <song name>` - download songs you want quickly via deezer
+- `/saavn <song name>` - download songs you want quickly via saavn
+- `/video <song name>` - download videos you want quickly
 
-**Yalnızca yöneticiler**
-- `/player` - müzik çalar ayarları panelini aç
-- `/durdur` - şarkı çalmayı duraklat
-- `/devam` - şarkı çalmaya devam et
-- `/atla` - sonraki şarkıyı çal
-- `/bitir` - müzik çalmayı durdur
-- `/katil` - asistanı sohbetinize davet edin
-- `/ayril` - asistanı sohbetinizden çıkarın
-- `/admincache` - Yönetici listesini yenile""")
+**Admins only**
+- `/player` - open music player settings panel
+- `/pause` - pause song play
+- `/resume` - resume song play
+- `/skip` - play next song
+- `/end` - stop music play
+- `/userbotjoin` - invite assistant to your chat
+- `/userbotleave` - remove assistant from your chat
+- `/adminleritani` - Refresh admin list""")
 
 @Client.on_message(
     filters.command("help")
@@ -40,25 +40,25 @@ async def help_(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""❤ Komutlar ve orada kullanımı burada açıklanmıştır ❤
-**Gruptaki herkes için**
-- `/oynat <şarkı adı>` - istediğin şarkıyı çal
-- `/doynat <şarkı adı>` - deezer ile istediğin şarkıyı çal
-- `/soynat <şarkı adı>` -jio saavn ile istediğin şarkıyı çal
-- `/oynatmalistesi` - Şimdi çalma listesini göster
-- `/cparca` - Şimdi çalan göster
-- `/bul <şarkı adı>` - hızlıca istediğiniz şarkıları indirin
-- `/arama <query>` - ayrıntılarla youtube'da video arayın
-- `/deezer <şarkı adı>` - deezer ile istediğiniz şarkıları hızlıca indirin
-- `/saavn <şarkı adı>` - saavn ile istediğiniz şarkıları hızlıca indirin
-- `/video <şarkı adı>` - istediğiniz videoları hızlı bir şekilde indirin
+        f"""❤ The commands and there use is explained here ❤
+**For all in group**
+- `/play <song name>` - play song you requested
+- `/dplay <song name>` - play song you requested via deezer
+- `/splay <song name>` - play song you requested via jio saavn
+- `/playlist` - Show now playing list
+- `/current` - Show now playing
+- `/song <song name>` - download songs you want quickly
+- `/arama <query>` - search videos on youtube with details
+- `/deezer <song name>` - download songs you want quickly via deezer
+- `/saavn <song name>` - download songs you want quickly via saavn
+- `/video <song name>` - download videos you want quickly
 
 **Admins only**
-- `/player` - müzik çalar ayarları panelini aç
-- `/durdur` - şarkı çalmayı duraklat
-- `/devam` - şarkı çalmaya devam et
-- `/atla` - sonraki şarkıyı çal
-- `/bitir` - müzik çalmayı durdur
-- `/katil` - asistanı sohbetinize davet edin
-- `/ayril` - asistanı sohbetinizden çıkarın
-- `/admincache` - Yönetici listesini yenile""") 
+- `/player` - open music player settings panel
+- `/pause` - pause song play
+- `/resume` - resume song play
+- `/skip` - play next song
+- `/end` - stop music play
+- `/userbotjoin` - invite assistant to your chat
+- `/userbotleave` - remove assistant from your chat
+- `/adminleritani` - Refresh admin list""") 
