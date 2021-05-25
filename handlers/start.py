@@ -27,36 +27,24 @@ from config import BOT_NAME as bn
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""
-
-Selam , Ben {bn} 🎵
-
-Grubunuzun sesli aramasında müzik çalabilirim. [sancaklar_federasyon](https://t.me/sancaklar_federasyon) tarafından geliştirilmiştir.
-Şu anda desteklediğim komutlar şunlardır:
-▶️ /oynat - __Yanıtlanan ses dosyasını veya YouTube videosunu bağlantı üzerinden çalar.__
-⏸️ /durdur - __Sesli Sohbet Müziğini Duraklat.__
-⏩ /devam - __Sesli Sohbet Müziğine Devam Et.__
-⏭️ /atla - __Sesli Sohbette Çalan Geçerli Müziği Atlar.__
-🛑 /bitir - __Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.__
-🔎 /bul - __Müziği bulup gruba gönderir. Örnek /Bul uzi kervan.__
-🔀 /arama - __Müziği direk youtubeden arar ve linkler halinde sıralama yapar.__
-
-
-Beni grubunuza ekleyin ve özgürce müzik çalın !**
-         """,
+        f"""Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Sizi şaşırtacak pek çok harika özelliğim var!\n\n🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? ? Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki /help \'Kullanım Kılavuzu👤\' düğmesini tıklayın.\n\n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.\n\n🔴 [Kullanıcı Kılavuzu] (https://telegra.ph/GENEL-KOMUTLAR-05-10) bahsedilen daha fazla bilgi ve komutlar\n\nA @EfsaneStar tarafından hazırlanan bir projeyim "" " ,
+      """,
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
                     InlineKeyboardButton(
-                        "Owner 🇹🇷", url="https://t.me/@pumaefe"
+                        "Manual Komutlar👤", url="https://telegra.ph/GENEL-KOMUTLAR-05-10")
+                  ],[
+                    InlineKeyboardButton(
+                        "Kurucu Sahip🇹🇷", url="https://t.me/EfsaneStar"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/hirasetkanal"
+                        "Kanal Mp3 🎧", url="https://t.me/kanalEfsanestar"
                     )
               ],[ 
                     InlineKeyboardButton(
-                        "Sohbet Grup 🇹🇷", url="https://t.me/hirasetsohbet"
+                        "Sohbet Grup 🇹🇷", url="https://t.me/sohbetskyfall"
                     )]
             ]
         ),
@@ -70,7 +58,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🚨 Support Kanal 🚨", url="https://t.me/hirasetkanal")
+                        "🚨 Support Kanal 🚨", url="https://t.me/Turkishvoicekanal")
                 ]
             ]
         )
