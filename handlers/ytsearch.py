@@ -20,7 +20,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 async def ytarama(_, message: Message):
     try:
         if len(message.command) < 2:
-            await message.reply_text("/bul bulmak için isme ihtiyacı var!")
+            await message.reply_text("/search needs an argument!")
             return
         query = message.text.split(None, 1)[1]
         m = await message.reply_text("Aranıyor....")

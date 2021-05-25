@@ -22,12 +22,12 @@ async def update_admin(client, message):
     for u in admins:
         new_ads.append(u.user.id)
     a[message.chat.id] = new_ads
-    await message.reply_text('İçindeki yönetici listesi başarıyla güncellendi **{}**'.format(message.chat.title))
+    await message.reply_text('Sucessfully updated admin list in **{}**'.format(message.chat.title))
 
 
 
 
-@Client.on_message(command("durdur") & other_filters)
+@Client.on_message(command("pause") & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
@@ -36,13 +36,13 @@ async def pause(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'paused'
     ):
-        await message.reply_text("✯HirasetMusic✯=❗ Hiçbir şey oynamıyor.!")
+        await message.reply_text("✯EfsaneStarMusic✯=❗ Hiçbir şey oynamıyor.!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("✯W2HMusic✯=▶️ Duraklatıldı!")
+        await message.reply_text("✯W2HMusic✯=▶️ Paused!")
 
 
-@Client.on_message(command("devam") & other_filters)
+@Client.on_message(command("resume") & other_filters)
 @errors
 @authorized_users_only
 async def resume(_, message: Message):
@@ -51,18 +51,18 @@ async def resume(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'playing'
     ):
-        await message.reply_text("✯HirasetMusic✯=❗ Hiçbir şey duraklatılı değil!")
+        await message.reply_text("✯EfsaneStarMusic✯=❗ Hiçbir şey duraklatılı değil!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("✯HirasetMusic✯=⏸ Devam Ediyor!")
+        await message.reply_text("✯EfsaneStarMusic✯=⏸ Resumed!")
 
 
-@Client.on_message(command("bitir") & other_filters)
+@Client.on_message(command("end") & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("✯HirasetMusic✯=❗ Hiçbir şey çalışmıyor!")
+        await message.reply_text("✯EfsaneStarMusic✯=❗ Hiçbir şey çalışmıyor!")
     else:
         try:
             callsmusic.queues.clear(message.chat.id)
@@ -70,16 +70,16 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("✯HirasetMusic✯=❌ Müzik kapatıldı!")
+        await message.reply_text("✯EfsaneStarMusic✯=❌ Müzik kapatıldı!")
 
 
-@Client.on_message(command("atla") & other_filters)
+@Client.on_message(command("skip") & other_filters)
 @errors
 @authorized_users_only
 async def skip(_, message: Message):
     global que
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("✯HirasetMusic✯=❗ Atlamak için hiçbir şey oynamıyor!")
+        await message.reply_text("✯EfsaneStarMusic✯=❗ Atlamak için hiçbir şey oynamıyor!")
     else:
         callsmusic.queues.task_done(message.chat.id)
 
@@ -97,7 +97,7 @@ async def skip(_, message: Message):
         skip = qeue.pop(0)
     if not qeue:
         return
-    await message.reply_text(f'- Atlandı **{skip[0]}**\n- Şimdi oynuyor **{qeue[0][0]}**')
+    await message.reply_text(f'- Skipped **{skip[0]}**\n- Now Playing **{qeue[0][0]}**')
 
 
 @Client.on_message(
@@ -106,4 +106,4 @@ async def skip(_, message: Message):
 @errors
 async def admincache(client, message: Message):
     set(message.chat.id, [member.user for member in await message.chat.get_members(filter="administrators")])
-    #await message.reply_text("✯HirasetMusic✯=❇️ Yönetici önbelleği yenilendi!")
+    #await message.reply_text("✯EfsaneStarMusic✯=❇️ Yönetici önbelleği yenilendi!")
