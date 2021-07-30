@@ -399,7 +399,7 @@ async def m_cb(b, cb):
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
     global que
-    lel = await message.reply("🔄 **✯EfsaneStarMusic ile İşleme Alındı✯**")
+    lel = await message.reply("🔄 **✯ReislerMüzikBot ile İşleme Alındı✯**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -449,7 +449,7 @@ async def play(_, message: Message):
         return     
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
-    await lel.edit("🔎 **✯EfsaneStarMusic aracılığıyla bulma✯**")
+    await lel.edit("🔎 **✯ReislerMüzikbot aracılığıyla bulma✯**")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -460,7 +460,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **✯EfsaneStarMusic ile İşleme Alındı✯**")
+    await lel.edit("🎵 **✯ReislerMuzikbot ile İşleme Alındı✯**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -491,7 +491,7 @@ async def play(_, message: Message):
                 [
                    InlineKeyboardButton(
                        text="⭐ Support ⭐",
-                       url='https://t.me/Sohbetlobisi')
+                       url='https://t.me/SancakAilesi')
                 ],
                 [       
                     InlineKeyboardButton(
@@ -532,7 +532,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Oynatılıyor** tarafından istenen şarkı {} ve EfsaneStarMusic ".format(
+        caption="▶️ **Oynatılıyor** tarafından istenen şarkı {} ve ReislerMüzik ".format(
         message.from_user.mention()
         ),
     )
@@ -547,13 +547,13 @@ async def play(_, message: Message):
 )
 async def deezer(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **✯EfsaneStarMusic Aracılığıyla İşleme Alındı✯**")
+    lel = await message_.reply("🔄 **✯ReislerMuzik Aracılığıyla İşleme Alındı✯**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "EfsaneStarMusic"
+        user.first_name =  "ReislerMuzik"
     usar = user
     wew = usar.id
     try:
