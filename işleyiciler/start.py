@@ -1,5 +1,5 @@
-# Mehmet babanin müzik botları prjosi
-# Aynen öyle baba ahaha 
+# Reisler Müzik BOTU BAŞLATILIYOR
+# BAŞLADIK REİS
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -27,7 +27,7 @@ from config import BOT_NAME as bn
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Sizi şaşırtacak pek çok harika özelliğim var!\n\n🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? ? Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki /help \'Kullanım Kılavuzu👤\' düğmesini tıklayın.\n\n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.\n\n🔴 [Kullanıcı Kılavuzu] (https://telegra.ph/GENEL-KOMUTLAR-05-10) bahsedilen daha fazla bilgi ve komutlar\n\nA @EfsaneStar tarafından hazırlanan bir projeyim "" " ,
+        f"""Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Sizi şaşırtacak pek çok harika özelliğim var!\n\n🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? ? Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki /help \'Kullanım Kılavuzu👤\' düğmesini tıklayın.\n\n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.\n\n🔴 [Kullanıcı Kılavuzu] (https://telegra.ph/GENEL-KOMUTLAR-05-10) bahsedilen daha fazla bilgi ve komutlar\n\nA @kizilsancaksahibi tarafından hazırlanan bir projeyim "" " ,
       """,
         reply_markup=InlineKeyboardMarkup(
             [ 
@@ -36,15 +36,15 @@ async def start(_, message: Message):
                         "Manual Komutlar👤", url="https://telegra.ph/GENEL-KOMUTLAR-05-10")
                   ],[
                     InlineKeyboardButton(
-                        "Kurucu Sahip🇹🇷", url="https://t.me/EfsaneStar"
+                        "Kurucu Sahip🇹🇷", url="https://t.me/kizilsancaksahibi"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "Kanal Mp3 🎧", url="https://t.me/kanalEfsanestar"
+                        "Kanal Mp3 🎧", url="https://t.me/ReislerKanal"
                     )
               ],[ 
                     InlineKeyboardButton(
-                        "Sohbet Grup 🇹🇷", url="https://t.me/sohbetskyfall"
+                        "Sohbet Grup 🇹🇷", url="https://t.me/sancakailesi"
                     )]
             ]
         ),
@@ -58,7 +58,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🚨 Support Kanal 🚨", url="https://t.me/Turkishvoicekanal")
+                        "🚨 Support Kanal 🚨", url="https://t.me/ReislerKanal")
                 ]
             ]
         )
