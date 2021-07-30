@@ -71,11 +71,11 @@ Ne xdays müzik projesi , ne de pytgcalls kararlı değil
 
 ## Bu Botu dağıtmanın en kolay yolu
 ### HEROKU
-<a href="https://heroku.com/deploy?template=https://github.com/medla3/hirasetmusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<a href="https://heroku.com/deploy?template=https://github.com/ReislerSupport/bomba"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 ### StringSession
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@GalaxyOp/W2HMusicBot#main.py) 
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@AdizKaptan/W2HMusicBot) 
 
 
 ### Mandatory Vars.
@@ -83,7 +83,7 @@ Ne xdays müzik projesi , ne de pytgcalls kararlı değil
 - Some Of The Mandatory Vars Are :-
    - `API_ID` :  Give API_ID of your Alternate Telegram Account. also get from here [@APIInfoBot](https://t.me/APIinfoBot)
    - `API_HASH` :  Give API_HASH of your Alternate Telegram Account. also get from here [@APIInfoBot](https://t.me/APIinfoBot)
-   - `STRING_NAME` :  Make a string session from [here](https://replit.com/@QueenArzoo/VCPlayBot)
+   - `STRING_NAME` :  Make a string session from [here](https://replit.com/@AdizKaptan/W2HMusicBot)
    - `BOT_TOKEN` :  Make a Bot from [@Botfather](https://t.me/botfather) and fill it's bot token.
    - `SUDO_USERS` :  Fill Userid of yhe users whom you want to be able to control the bot. You can add multiple id by giving a space in b/w each id.
 
@@ -114,12 +114,12 @@ Ne xdays müzik projesi , ne de pytgcalls kararlı değil
 
 - Inline search is also supported.
 
-* Bot Link:  <a href="https://t.me/hiraset_musicbot" alt="EfsaneStarMusic"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-W2HMusic-blue" /> </a>
-* News channel: <a  href="https://t.me/hirasetsohbet" alt="Sohbet Group"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-W2HMusic%20Updates-9cf" /> </a>
+* Bot Link:  <a href="https://t.me/ReislerMuzikBot" alt="ReislerMuzikBot"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-W2HMusic-blue" /> </a>
+* News channel: <a  href="https://t.me/SancakAilesi" alt="Sohbet Group"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-W2HMusic%20Updates-9cf" /> </a>
 
 ## Support
-- [Channel](https://t.me/W2H_userbot)
-- [Group](https://t.me/W2HSupport)
+- [Channel](https://t.me/ReislerKanal)
+- [Group](https://t.me/ReisleeSupport)
 
 ## Credits
 - [DaisyXMusic](https://github.com/TeamDaisyX/DaisyXMusic)
@@ -127,5 +127,5 @@ Ne xdays müzik projesi , ne de pytgcalls kararlı değil
 - [hamker cat](https://github.com/thehamkercat/Telegram_VC_Bot)
 - [Roj](https://github.com/rojserbest)
 - [Marvin](https://github.com/BlackStoneReborn)
-- [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
+- [Laky](https://github.com/Laky-64) & [ADSİZ](https://github.com/ReislerSupport): PyTgCalls
 
