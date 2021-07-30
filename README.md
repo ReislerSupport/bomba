@@ -1,5 +1,5 @@
-# HİRASETMUSİC TELEGRAM VC MÜZİK BOT 
-[![W2HMusic logo](https://i.ibb.co/GHN85bM/hirasetmusic.jpg)](https://t.me/hirasetmusic_bot)
+# REİSLERMUSİC TELEGRAM VC MÜZİK BOT 
+[![W2HMusic logo](https://telegra.ph/file/c7b9b1cdcade78b30eeb9.jpg)](https://t.me/ReislerMuzikBot)
 
 
 -xdays müzik projesinden ve Hamkercat'in telegram ses robotundan esinlenmiştir.
