@@ -90,10 +90,10 @@ Ne xdays müzik projesi , ne de pytgcalls kararlı değil
 
 ### Komut🛠
 #### Gruptaki herkes için
-- `/oynat <song name>` - istediğin şarkıyı çal
-- `/doynat <song name>` - deezer ile istediğin şarkıyı çal
-- `/soynat <song name>` - jio saavn ile istediğin şarkıyı çal
-- `/oynatmalistesi` - Şimdi çalma listesini göster
+- `/play <song name>` - istediğin şarkıyı çal
+- `/dplay <song name>` - deezer ile istediğin şarkıyı çal
+- `/splay <song name>` - jio saavn ile istediğin şarkıyı çal
+- `/playlist` - Şimdi çalma listesini göster
 - `/current` - Şimdi çalan göster
 - `/bul <song name>` - hızlıca istediğiniz şarkıları indirin
 - `/arama <query>` - ayrıntılarla youtube'da video arayın
