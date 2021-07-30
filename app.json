@@ -1,9 +1,9 @@
 {
   "name": "Music Bot",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
-  "logo": "https://i.ibb.co/GHN85bM/hirasetmusic.jpg",
+  "logo": "https://telegra.ph/file/c7b9b1cdcade78b30eeb9.jpg",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/medla3/hirasetmusic",
+  "repository": "https://github.com/ReislerSupport/bomba",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
@@ -17,7 +17,7 @@
     "BOT_NAME": {
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
-      "value": "Hiraset Music 🇹🇷"
+      "value": "REİSLER MÜZİK BOT 🇹🇷"
     },
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
