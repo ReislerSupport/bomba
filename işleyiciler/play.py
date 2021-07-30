@@ -583,7 +583,7 @@ async def deezer(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nkullanıcı {user.first_name} yapamadım yoğun istekler nedeniyle grubunuza katılın kullanıcı robotu! Kullanıcının grupta yasaklı olmadığından emin olun."
-                                  "\n\nVeya el ile ekleme @EfsaneStarMusic grubunuza ve yeniden deneyin</b>",
+                                  "\n\nVeya el ile ekleme @sancakailesi grubunuza ve yeniden deneyin</b>",
                               )
                               pass
     try:
@@ -623,7 +623,7 @@ async def deezer(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="⭐ Support ⭐",
-                   url='https://t.me/Sohbetlobisi')
+                   url='https://t.me/Sancakailesi')
              ],
              [       
                  InlineKeyboardButton(
@@ -645,9 +645,9 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        await res.edit_text(f"✯EfsaneStarMusic✯= #️⃣ Konumda sıraya alındı {position}")
+        await res.edit_text(f"✯REİSLERMusic✯= #️⃣ Konumda sıraya alındı {position}")
     else:
-        await res.edit_text("✯EfsaneStarMusic✯=▶️ Oynatılıyor.....")
+        await res.edit_text("✯ReislerMusic✯=▶️ Oynatılıyor.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
@@ -676,13 +676,13 @@ async def deezer(client: Client, message_: Message):
 )
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **✯EfsaneStarMusic ile İşleme Alındı✯=**")
+    lel = await message_.reply("🔄 **✯ReislerMuzik ile İşleme Alındı✯=**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "EfsaneStarMusic"
+        user.first_name =  "ReislerMuzik"
     usar = user
     wew = usar.id
     try:
@@ -712,7 +712,7 @@ async def jiosaavn(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @W2HMusic to your Group and try again</b>",
+                                  "\n\nOr manually add @Reislerkanal to your Group and try again</b>",
                               )
                               pass
     try:
@@ -756,7 +756,7 @@ async def jiosaavn(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="⭐ Support ⭐",
-                   url='https://t.me/Sohbetlobisi')
+                   url='https://t.me/Sancakailesi')
              ],
              [       
                InlineKeyboardButton(
@@ -780,12 +780,12 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"✯EfsaneStarMusic✯=#️⃣ Konumda sıraya alındı {position}",
+            caption=f"✯ReislerMusic✯=#️⃣ Konumda sıraya alındı {position}",
         
         )           
            
     else:
-        await res.edit_text("✯EfsaneStarMusic✯=▶️ Oynatılıyor.....")
+        await res.edit_text("✯ReislerMusic✯=▶️ Oynatılıyor.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
